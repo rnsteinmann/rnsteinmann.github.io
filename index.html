@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style-home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+            <header>
+                <img src="imagenes/Logo.png" id="logo" alt="Logo Alura">
+            </header>
+
+
+            <main>
+               <section>
+
+                        <form id="caja-input">
+                            <textarea type="text" cols="20" rows="6" class="input-text" placeholder="Ingrese su texto aquí" required></textarea>
+                        </form>
+
+                        <img src="imagenes/Vector.png" id="at" alt="Atención"><h6>Sólo letras minúsculas y sin acentos</h6>
+
+                        <div class="botones">
+                            <button type="button" id="encriptar" onclick="btnencriptar()">Encriptar</button>
+                            <button type="button" id="desencriptar" onclick="btndesencriptar()">Desencriptar</button>
+                        </div>
+               </section>
+
+               <section class="output" id="output">
+                    <div id="mostrar">
+                    <textarea type="text" class="input-text-area" cols="10" rows="6"></textarea>
+                    </div>
+               </section>
+                        <div id="esconder">
+                                <img src="imagenes/Munieco.png" id="munieco" alt="Muñeco Alura">
+                                <div id="texto">
+                                <p class="output__title">Ningún mensaje fue encontrado</p>
+                                <p class="output__text" id="output--text">Ingrese el texto que desea encriptar o desencriptar</p>
+                                </div>
+                        </div>
+               </section>
+
+            </main>
+    </body>
+
+    <script src="script.js"></script>
+</html>
